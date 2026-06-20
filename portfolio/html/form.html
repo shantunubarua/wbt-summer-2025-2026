@@ -1,0 +1,115 @@
+<html lang="en">
+
+<body>
+    <div class="navbar">
+        <a href="index.html"><strong>Home</strong></a>
+        <a href="experience.html"><strong>Experience</strong></a>
+        <a href="education.html"><strong>Education</strong></a>
+        <a href="Project.html"><strong>Project</strong></a>
+        <a href="form.html"><strong></strong>Contact</strong></a>
+    </div>
+    <br>
+
+    <form method="post">
+        <fieldset>
+            <legend>Contact Me</legend>
+
+            <table cellpadding="5">
+
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td>
+                        <input type="text" id="name" name="name" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td>
+                        <input type="email" id="email" name="email" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="pass">Password:</label></td>
+                    <td>
+                        <input type="password" id="pass" name="pass" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Skills:</label></td>
+                    <td>
+                        <input type="checkbox" id="cpp" name="skills[]" value="C++">
+                        <label for="cpp">C++</label>
+
+                        <input type="checkbox" id="python" name="skills[]" value="Python">
+                        <label for="python">Python</label>
+
+                        <input type="checkbox" id="java" name="skills[]" value="Java">
+                        <label for="java">Java</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Services:</label></td>
+                    <td>
+                        <input type="checkbox" id="service1" name="services[]" value="Web Development">
+                        <label for="service1">Web Development</label>
+
+                        <input type="checkbox" id="service2" name="services[]" value="AI/ML">
+                        <label for="service2">AI/ML</label>
+
+                        <input type="checkbox" id="service3" name="services[]" value="Data Science">
+                        <label for="service3">Data Science</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="reason">Reason of Contact:</label></td>
+                    <td>
+                        <select id="reason" name="reason" required>
+                            <option value="">Select One</option>
+                            <option value="Job">Job</option>
+                            <option value="Projects">Projects</option>
+                            <option value="Thesis">Thesis</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="date">Select Date:</label></td>
+                    <td>
+                        <input type="date" id="date" name="date" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+    </form>
+    <footer> ©2026 Shantunu Barua</footer>
+
+
+</body>
+
+</html>
