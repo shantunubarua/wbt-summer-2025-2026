@@ -7,53 +7,62 @@
 
 <body>
 
-    <div class="registration">
-        <h1>Registration</h1>
-        <p>Please complete all fields below.</p>
-        <hr>
-    </div>
+    <h1>Registration</h1>
+    <p>Please complete all fields below.</p>
+    <hr>
 
-    <div class="fullname">
-        <label>Full Name</label>
-        <input type="text" placeholder="Shantunu Barua">
-    </div>
+    <form method="post">
 
+        <table>
 
-    <div class="postalcode">
-        <label>Postal Code</label>
-        <input type="number" placeholder="00000">
-    </div>
+            <tr>
+                <td><label for="fullname">Full Name</label></td>
+                <td><input type="text" id="fullname" name="fullname" placeholder="Shantunu Barua"></td>
+            </tr>
 
-    <div class="dob">
-        <label>Date of Birth</label>
-        <input type="text" placeholder="25 / 06 / 2026">
-    </div>
+            <tr>
+                <td><label for="postalcode">Postal Code</label></td>
+                <td><input type="number" id="postalcode" name="postalcode" placeholder="00000"></td>
+            </tr>
 
-    <div class="email">
-        <label>Email Address</label>
-        <input type="email" placeholder="jane@example.com">
-    </div>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="text" id="dob" name="dob" placeholder="25 / 06 / 2026"></td>
+            </tr>
 
-    <div class="password">
-        <label>Password</label>
-        <input type="password" placeholder="Password">
-    </div>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="email" id="email" name="email" placeholder="jane@example.com"></td>
+            </tr>
 
-    <div class="country">
-        <label>Country</label>
-        <select>
-            <option>Select a country...</option>
-            <option>Bangladesh</option>
-            <option>India</option>
-            <option>Pakistan</option>
-        </select>
-    </div>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" placeholder="Password"></td>
+            </tr>
 
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option>Select a country...</option>
+                        <option>Bangladesh</option>
+                        <option>India</option>
+                        <option>Pakistan</option>
+                    </select>
+                </td>
+            </tr>
 
-    <div class="buttons">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-    </div>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
 
 </body>
 
